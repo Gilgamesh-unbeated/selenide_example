@@ -5,6 +5,13 @@
 		<classes>
 			<class name="com.liu.test.BeforeTest" />
 			<class name="com.liu.test.LoginTest" />
+			<class name="com.liu.test.BusinessTest">
+				<methods >
+					<include name="search"></include>
+					<include name="addToBookshelves"></include>
+					<include name="checkBookshelves"></include>
+				</methods>
+			</class>
 			<class name="com.liu.test.AfterTest" />
 		</classes>
 	</test>

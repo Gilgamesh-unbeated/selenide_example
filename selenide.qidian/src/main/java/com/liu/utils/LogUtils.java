@@ -1,5 +1,6 @@
 package com.liu.utils;
 
+import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -8,13 +9,15 @@ import org.apache.log4j.PropertyConfigurator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import static com.liu.utils.Constants.*;
+
 import com.liu.enums.LogLevel;
 
 public class LogUtils
 {
 	static
 	{
-		PropertyConfigurator.configure(Constants.LOG4J);
+		PropertyConfigurator.configure(CONFIG_DIR+File.separator+LOG4J);
 	}
 	static Map<String, Logger> logMap = new HashMap<String, Logger>();
 

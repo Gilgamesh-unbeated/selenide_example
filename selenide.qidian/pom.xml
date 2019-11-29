@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>selenide</groupId>
-  <artifactId>taobao</artifactId>
+  <artifactId>qidian</artifactId>
   <version>1.0</version>
   <packaging>jar</packaging>
 
-  <name>taobao</name>
+  <name>qidian</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -51,5 +51,10 @@
         <artifactId>guice</artifactId>
         <version>3.0</version>
      </dependency>
+     <dependency>
+         <groupId>org.assertj</groupId>
+         <artifactId>assertj-core</artifactId>
+         <version>3.4.1</version> 
+	</dependency>
   </dependencies>
 </project>

@@ -16,8 +16,9 @@ public class LoginTest extends ParentTest
 	@Test
 	public void login() 
 	{
+		//shoulebe方法用于等待控件出现
 		$(By.xpath("//*[@id=\"username\"]")).shouldBe(enabled).sendKeys(props.getProperty(USERNAME));
-		$(By.xpath("//*[@id=\"password\"]")).shouldBe(enabled).sendKeys(props.getProperty(PASSWD));
+		$(By.xpath("//*[@id=\"password\"]")).sendKeys(props.getProperty(PASSWD));
 		$(By.xpath("//*[@id=\"j-inputMode\"]/div[2]/a")).shouldBe(enabled).click();
 	}
 

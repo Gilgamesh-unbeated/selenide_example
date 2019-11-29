@@ -19,5 +19,8 @@ public class Constants
 	public static final String CONFIG_PROPERTIES_FILE = "config.properties";
 	
 	public static final long THOUSAND = 1000L;
+	
+	public static final String BOOK = "回到明朝当王爷";
+	
 
 }
